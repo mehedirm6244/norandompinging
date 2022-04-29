@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+	line-height: 1.5em;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: #eee;
+	color: #222;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+h1
+{
+	font-weight: normal;
+	margin: 0;
+}
+
+#content
+{
+	background-color: white;
+	width: 850px;
+	margin: 6% auto;
+	padding: 35px 50px;
+	border-radius: 6px;
+	box-shadow: 0 0 10px #ddd;
+}
+
+.chatbox
+{
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	margin: 20px;
+}
+
+.chatbox .msg-block
+{
+	margin: 5px;
+	overflow: auto !important;
+}
+
+.chatbox .msg
+{
+	padding: 7px 13px;
+	margin: 2px;
+	background-color: #ddd;
+	border-radius: 10px 10px 10px 0;
+	float: left;
+	clear: both;
+	max-width: 60%;
+}
+
+.chatbox .msg .mention
+{
+	text-decoration: underline;
+}
+
+.chatbox .msg-time
+{
+	margin-bottom: 2px;
+	color: #666;
+	font-size: 12px;
+}
+
+.chatbox .right *
+{
+	float: right;
+}
+
+.chatbox .right .msg
+{
+	border-radius: 10px 10px 0 10px;
+	color: #fff;
+	background-color: #1174d7;
+}
+
+#footer
+{
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+#footer a
+{
+	color: #1174d7;
+	text-decoration: none;
+}
+#footer a:hover
+{
+	text-decoration: underline;
+}
+
+
+
+/****************************************
+	FOR DISPLAY WIDTH UNDER 950px
+****************************************/
+
+@media screen and (max-width: 950px)
+{
+	#content
+	{
+		margin: 0;
+		border-radius: 0;
+		width: 100%;
+		padding: 15px 25px;
+	}
+}
